@@ -77,3 +77,10 @@ dockershadowsockscloud_ss2_1 is up-to-date
 dockershadowsockscloud_ss3_1 is up-to-date
 ```
 
+### Incrementally Deleting Users
+
+Same as above but use `--remove-orphans` option to keep sync between compose config and the running container set.
+
+```
+docker-compose up -d --remove-orphans
+```
