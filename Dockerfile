@@ -9,5 +9,9 @@ RUN apt-get update && \
     apt-get install -y python-pip
 RUN pip install shadowsocks==2.8.2
 
-# Configure container to run as an executable
-ENTRYPOINT ["/usr/local/bin/ssserver"]
+# The SS command from environment variables
+#
+# Ref:
+#   https://github.com/docker/docker/issues/5509
+#   
+CMD /usr/local/bin/ssserver -s ${SS_SERVER} -p ${SS_PORT} -k ${SS_PASSWORD} -m ${SS_ENCRYPTION}
