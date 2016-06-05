@@ -12,7 +12,7 @@ Configuration:
 
 Operation:
 
-* Start all: `docker-compose up`
+* Start all: `docker-compose up` or `docker-compose up -d` (running in background)
 * End all: `docker-compose down`
 
 
