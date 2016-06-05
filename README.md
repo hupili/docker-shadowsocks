@@ -1,5 +1,18 @@
-docker-shadowsocks
-==================
+# docker-shadowsocks-cloud
+
+A quick wrap of [oddrationale/docker-shadowsocks](https://github.com/oddrationale/docker-shadowsocks)
+for easier multiple configurations management using `docker-compose`
+
+## Usage
+
+Modify configurations `docker-compose.yml`.
+
+* Start all: `docker-compose up`
+* End all: `docker-compose down`
+
+
+----------
+
 
 This Dockerfile builds an image with the Python implementation of [shadowsocks](https://github.com/shadowsocks/shadowsocks). Based on Ubuntu 14.04 image.
 
