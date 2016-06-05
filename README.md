@@ -5,7 +5,12 @@ for easier multiple configurations management using `docker-compose`
 
 ## Usage
 
-Modify configurations `docker-compose.yml`.
+Configuration:
+
+* Copy `docker-compose.yml.sample` to `docker-compose.yml`
+* Modify the configurations.
+
+Operation:
 
 * Start all: `docker-compose up`
 * End all: `docker-compose down`
