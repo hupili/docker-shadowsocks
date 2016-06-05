@@ -1,0 +1,13 @@
+version: '2'
+services:
+  ss1:
+    image: hupili/shadowsocks
+    build: .
+    ports:
+      - "1985:3000"
+    environment:
+      SS_SERVER: 0.0.0.0
+      SS_PORT: 3000
+      SS_PASSWORD: imwNuDbE77RryP
+      SS_ENCRYPTION: aes-256-cfb
+
