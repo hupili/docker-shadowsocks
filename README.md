@@ -84,3 +84,14 @@ Same as above but use `--remove-orphans` option to keep sync between compose con
 ```
 docker-compose up -d --remove-orphans
 ```
+
+### Utilities
+
+For easier admin, you can create a table for user information.
+A template is given [here](https://docs.google.com/spreadsheets/d/1vX3fGHH73vpKX9mE2qu8foDbsEApwuC4L8nrCEf_ZH0/edit?usp=sharing)
+
+Save the table to `SS List - Users.csv`, and you can use following utilities:
+
+* `make compile` -- Compiles `SS List - Users.csv` into `docker-compose.yml`.
+* `make sync` -- Sync `docker-compose.yml` with running containers.
+* `make email` -- Email the users of their SS credentials. You need to install [mgcli](https://github.com/hupili/mgcli) first. Edit `email.html` for your email body template.
